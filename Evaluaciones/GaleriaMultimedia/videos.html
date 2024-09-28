@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Multimedia Personal - Videos</title>
+    <!-- Importar el CSS de Bootstrap desde su CDN (content delivery network o red de distribución de contenido) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Importar el JavaScript o JS de Bootstrap desde su CDN (content delivery network o red de distribución de contenido) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- CSS Personal-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Tipografias Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Definición de las caracteristicas de la barra de navegación definiendo como se expandira en displays grandes (navbar-expand-lg) y utilizando las indicaciones de estilo oscuro de Bootstrap (navbar-dark) -->
+        <div class="container-fluid"> <!-- Definición del contenedor como fluido o adaptativo para distintos dimensiones de pantalla -->
+          <a class="navbar-brand" href="sitio.html">Galería Multimedia</a> <!-- Definición del HTML de referencia utilizado por la pagina de inicio del sitio -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!-- Definición de los parametros de adaptabilidad del boton dropdown de la barra de navegación definiendo si se mostrara en distintos tipos de pantallas (data-bs-toggle="collapse"), su objetivo (data-bs-target="#navbarNav"), los elementos que controla (aria-controls="navbarNav"), si estos se expanden o no (aria-expanded="false") y su etiqueta (aria-label="Toggle navigation") -->
+            <span class="navbar-toggler-icon"></span> <!-- Definición del boton y su icono cuando la barra de navegacion detecta las dimensiones de la pantalla que se esta utilizando -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav"> <!-- Definición de la clase y el id del colapsador de la barra de navegación -->
+            <ul class="navbar-nav"> <!-- Definición de la clase de la lista desortenada que compone la barra de navegación -->
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link" aria-current="page" href="imagenes.html">Imagenes</a> <!-- Definición de elemento con referencia de la barra de navegación -->
+              </li>
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link active" href="videos.html">Videos</a> <!-- Definición de elemento con referencia de la barra de navegación definiendolo como el elemento activo -->
+              </li>
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link" href="audios.html">Pistas de audio</a> <!-- Definición de elemento con referencia de la barra de navegación -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header>
+        <div class="container"> <!-- Definición de contenedor de los elementos del header -->
+            <img src="img/gdv/logo.png" class="img-fluid mb-3"></img> <!-- Definición de la imagen utilizada como logo con las caracteristicas de adaptable o fluida entregadas por el CSS y JS de Bootrstrap -->
+            <p> 
+                Explora los videos que he encontrado interesantes a lo largo de esta semana <!-- Parrafo para una breve descripción para la pagina de audios del sitio -->
+            </p> 
+           </div>
+    </header>
+    
+    <main>
+        <div class="album py-5"> <!-- Definir la clase album multiplicando por 3 la variable $spacer (define espacio entre el contenido de este) del CSS de bootrap en el eje Y -->
+            <div class="container"> <!-- Definir el contenedor para el contenido de este sitio -->
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> <!-- Configurar las filas y el espacio que uitilizan dependiendo del tamaño de la pantalla del dispositivo, pequeño (row-cols-sm-2) y medianos (row-cols-md-3) multiplicando las dimensiones de la gutters por 1  -->
+                <div class="col"> <!-- definir clase columna para las tarjetas contenedoras del contenido del sitio -->
+                  <div class="card shadow-sm"> <!-- Definir la clase tarjeta con una sombra pequeña -->
+                    <img class="card-img-top" width="100%" height="225" src="img/gdv/gdv1.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img> <!-- definir la imagen en la parte superior de la tarjeta manteniendo el ancho y definiendo una altura y preservando el aspect ratio (preserveAspectRatio="xMidYMid slice") dejandolo sin ser enfocable (focusable="false") -->
+                    <div class="card-body"> <!-- cuerpo de la tarjeta o card de Bootstrap -->
+                      <p class="card2-text">"KKnowley" trae un video en donde relata la historia completa de los juegos Payday 1 y Payday 2 en preparación para Payday 3.</p> <!-- parrafo como pequeña descripcion de la tarjeta -->
+                      <div class="d-flex justify-content-between align-items-center"> <!-- contenedor flexbox con alineacion de elementos al centro y con texto justificado -->
+                        <div class="btn-group"> <!-- Definir la clase para el boton para abrir el modal de Bootstrap -->
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m1">Ver</button> <!-- boton que hace aparecer un modal de Bootstrap, configurado para ser pequeño (btn-sm), utilizando las especificiones de modo oscuro de Bootrap (btn-dark), el cambio a modal (data-bs-toggle="modal"), y su objetivo (data-bs-target="#m#") -->
+                              <!--Modal video 1 de Bootstrap -->
+                              <div class="modal fade" id="m1" tabindex="-1" aria-labelledby="m1Label" aria-hidden="true"> <!-- clase que define los parametros de difuminación, su id (id="m#"), indicando si puede ser enfocado, y si participa en la navegación secuencial del teclado,  al ser valor negativo significa que se debe poder enfocar el elemento, pero no se debe poder acceder a él mediante navegación secuencial por teclado (tabindex="-1"),  quien lo etiqueta (aria-labelledby="m1Label")-->
+                                <div class="modal-dialog modal-xl modal-dialog-centered"> <!-- Parametros del modal de Bootstrap especificando que la ventana emergente este al centro de la pantalla (modal-dialog-centered) -->
+                                  <div class="modal-content"> <!-- Clase para definir el contenido de la modal -->
+                                    <div class="modal-header"> <!-- Clase para definir el encabezado de la modal -->
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">La historia completa de Payday</h1> <!-- header para una breve descripcion del contenido de la modal -->
+                                    </div>
+                                    <div class="modal-body"> <!-- Clase para definir el cuerpo de la modal -->
+                                      <div class="ratio ratio-16x9"> <!-- Clase para definir el cuerpo de la modal donde gracias a la funcionalidad de Bootstrap se define un ratio de 16:9 para la responsividad -->
+                                         <iframe iframe width="1100" height="600" class="embed-responsive-item" src="https://www.youtube.com/embed/4l-FfwK0ZnA" allowfullscreen></iframe> <!-- codigo del embedded de youtube con las dimensiones y especificando que sea responsivo (class="embed-responsive-item") por Bootstrap -->
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer"> <!-- Clase para definir el pie de la modal -->
+                                      <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">Cerrar</button> <!-- Clase para definir el boton pequeño (btn-sm) y usando los colores del dark mode de Boostrap (btn-dark) que cierra la modal -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"> <!-- definir clase columna para las tarjetas contenedoras del contenido del sitio -->
+                  <div class="card shadow-sm"> <!-- Definir la clase tarjeta con una sombra pequeña -->
+                    <img class="card-img-top" width="100%" height="225" src="img/gdv/gdv2.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img> <!-- definir la imagen en la parte superior de la tarjeta manteniendo el ancho y definiendo una altura y preservando el aspect ratio (preserveAspectRatio="xMidYMid slice") dejandolo sin ser enfocable (focusable="false") -->
+                    <div class="card-body"> <!-- cuerpo de la tarjeta o card de Bootstrap -->
+                      <p class="card2-text">"I Finished A Video Game" trae una restrospectiva y analisis en profundidad de Vagrant Story.</p> <!-- parrafo como pequeña descripcion de la tarjeta -->
+                      <div class="d-flex justify-content-between align-items-center"> <!-- Parametros del modal de Bootstrap especificando que la ventana emergente este al centro de la pantalla (modal-dialog-centered) -->
+                        <div class="btn-group"> <!-- Definir la clase para el boton para abrir el modal de Bootstrap -->
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m2">Ver</button> <!-- boton que hace aparecer un modal de Bootstrap, configurado para ser pequeño (btn-sm), utilizando las especificiones de modo oscuro de Bootrap (btn-dark), el cambio a modal (data-bs-toggle="modal"), y su objetivo (data-bs-target="#m1") -->
+                              <!--Modal video 2 de Bootstrap -->
+                              <div class="modal fade" id="m2" tabindex="-1" aria-labelledby="m2Label" aria-hidden="true"> <!-- clase que define los parametros de difuminación, su id (id="m#"), indicando si puede ser enfocado, y si participa en la navegación secuencial del teclado,  al ser valor negativo significa que se debe poder enfocar el elemento, pero no se debe poder acceder a él mediante navegación secuencial por teclado (tabindex="-1"),  quien lo etiqueta (aria-labelledby="m#Label")-->
+                                <div class="modal-dialog modal-xl modal-dialog-centered"> <!-- Parametros del modal de Bootstrap especificando que la ventana emergente este al centro de la pantalla (modal-dialog-centered) -->
+                                  <div class="modal-content"> <!-- Clase para definir el contenido de la modal -->
+                                    <div class="modal-header"> <!-- Clase para definir el encabezado de la modal -->
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Vagrant Story Retrospective | An Extremely Comprehensive Critique and History</h1> <!-- header para una breve descripcion del contenido de la modal -->
+                                    </div>
+                                    <div class="modal-body"> <!-- Clase para definir el cuerpo de la modal -->
+                                      <div class="ratio ratio-16x9"> <!-- Clase para definir el cuerpo de la modal donde gracias a la funcionalidad de Bootstrap se define un ratio de 16:9 para la responsividad -->
+                                         <iframe width="1100" height="600" class="embed-responsive-item" src="https://www.youtube.com/embed/oJbq959x-xU" allowfullscreen></iframe> <!-- codigo del embedded de youtube con las dimensiones y especificando que sea responsivo (class="embed-responsive-item") por Bootstrap -->
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer"><!-- Clase para definir el pie de la modal -->
+                                      <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">Cerrar</button> <!-- Clase para definir el boton pequeño (btn-sm) y usando los colores del dark mode de Boostrap (btn-dark) que cierra la modal -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdv/gdv3.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">"I Finished A Video Game" trae una restrospectiva y analisis en profundidad de la saga Principe de Persia.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m3">Ver</button>
+                            <!--Modal video 3 de Bootstrap -->
+                            <div class="modal fade" id="m3" tabindex="-1" aria-labelledby="m3Label" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Prince of Persia Series Retrospective | An Exhaustive History and Review</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                           <iframe width="1100" height="600" class="embed-responsive-item" src="https://www.youtube.com/embed/Io6zwExo3jw" allowfullscreen></iframe>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdv/gdv4.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">"HITC Sevens" analiza como es que la selección masculina de futbol japonesa han mejorado subtancialmente en los ultimos años.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m4">Ver</button>
+                            <!--Modal video 4 de Bootstrap -->
+                            <div class="modal fade" id="m4" tabindex="-1" aria-labelledby="m4Label" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">The Remarkable Rise of Japan's National Football Team</h1>
+                                    </div>
+                                     <div class="modal-body">
+                                       <div class="ratio ratio-16x9">
+                                         <iframe width="1100" height="600" class="embed-responsive-item" src="https://www.youtube.com/embed/KRjNA2j2Dbs" allowfullscreen></iframe>
+                                       </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                       <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdv/gdv5.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">Evento de Apple transmitido en vivo el 12 de septiembre de este año, en donde exhibieron los futuros productos de la marca.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m5">Ver</button>
+                            <!--Modal video 5 de Bootstrap -->
+                            <div class="modal fade" id="m5" tabindex="-1" aria-labelledby="m3Label" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Apple Event - September 12</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="ratio ratio-16x9">
+                                      <iframe width="1100" height="600" class="embed-responsive-item" src="https://www.youtube.com/embed/ZiP1l7jlIIA" allowfullscreen></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdv/gdv6.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">KVISION trae de vuelta una gran exito de los ´80 con un toque house con lo que se ha vuelto viral en Tik-Tok.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m6">Ver</button>
+                            <!--Modal video 6 de Bootstrap -->
+                            <div class="modal fade" id="m6" tabindex="-1" aria-labelledby="m6Label" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Easy Lover (KVISION REMIX)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="ratio ratio-16x9">
+                                        <iframe width="1100" height="600" class="embed-responsive-item" src="https://www.youtube.com/embed/OvhXqEZTBPM" allowfullscreen></iframe>
+                                      </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 AML</p> <!-- Definición del Footer del sitio -->
+    </footer>
+</body>
+</html>

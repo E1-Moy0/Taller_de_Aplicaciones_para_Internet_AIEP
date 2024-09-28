@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Multimedia Personal - Imagenes</title>
+    <!-- Importar el CSS de Bootstrap desde su CDN (content delivery network o red de distribución de contenido) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Importar el JavaScript o JS de Bootstrap desde su CDN (content delivery network o red de distribución de contenido) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- CSS Personal-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Tipografias Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Definición de las caracteristicas de la barra de navegación definiendo como se expandira en displays grandes (navbar-expand-lg) y utilizando las indicaciones de estilo oscuro de Bootstrap (navbar-dark) -->
+        <div class="container-fluid"> <!-- Definición del contenedor como fluido o adaptativo para distintos dimensiones de pantalla -->
+          <a class="navbar-brand" href="sitio.html">Galería Multimedia</a> <!-- Definición del HTML de referencia utilizado por la pagina de inicio del sitio -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!-- Definición de los parametros de adaptabilidad del boton dropdown de la barra de navegación definiendo si se mostrara en distintos tipos de pantallas (data-bs-toggle="collapse"), su objetivo (data-bs-target="#navbarNav"), los elementos que controla (aria-controls="navbarNav"), si estos se expanden o no (aria-expanded="false") y su etiqueta (aria-label="Toggle navigation") -->
+            <span class="navbar-toggler-icon"></span> <!-- Definición del boton y su icono cuando la barra de navegacion detecta las dimensiones de la pantalla que se esta utilizando -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav"> <!-- Definición de la clase y el id del colapsador de la barra de navegación -->
+            <ul class="navbar-nav"> <!-- Definición de la clase de la lista desortenada que compone la barra de navegación -->
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link active" aria-current="page" href="imagenes.html">Imagenes</a> <!-- Definición de elemento con referencia de la barra de navegación definiendolo como el elemento activo -->
+              </li>
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link" href="videos.html">Videos</a> <!-- Definición de elemento con referencia de la barra de navegación definiendolo como el elemento activo -->
+              </li>
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link" href="audios.html">Pistas de audio</a> <!-- Definición de elemento con referencia de la barra de navegación -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header>
+        <div class="container"> <!-- Definición de contenedor de los elementos del header -->
+            <img src="img/gdi/logo.png" class="img-fluid mb-3"></img> <!-- Definición de la imagen utilizada como logo con las caracteristicas de adaptable o fluida entregadas por el CSS y JS de Bootrstrap -->
+            <p> 
+                Explora mi colección de imágenes favoritas que he encontrado por internet <!-- Parrafo para una breve descripción para la pagina de audios del sitio -->
+            </p> 
+           </div>
+    </header>
+    
+    <main>
+        <div class="album py-5"> <!-- Definir la clase album multiplicando por 3 la variable $spacer (define espacio entre el contenido de este) del CSS de bootrap en el eje Y -->
+            <div class="container"> <!-- Definir el contenedor para el contenido de este sitio -->
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> <!-- Configurar las filas y el espacio que uitilizan dependiendo del tamaño de la pantalla del dispositivo, pequeño (row-cols-sm-2) y medianos (row-cols-md-3) multiplicando las dimensiones de la gutters por 1  -->
+                <div class="col"> <!-- definir clase columna para las tarjetas contenedoras del contenido del sitio -->
+                  <div class="card shadow-sm"> <!-- Definir la clase tarjeta con una sombra pequeña -->
+                    <img class="card-img-top" width="100%" height="225" src="img/gdi/gdi1.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img> <!-- definir la imagen en la parte superior de la tarjeta manteniendo el ancho y definiendo una altura y preservando el aspect ratio (preserveAspectRatio="xMidYMid slice") dejandolo sin ser enfocable (focusable="false") -->
+                    <div class="card-body"> <!-- cuerpo de la tarjeta o card de Bootstrap -->
+                      <p class="card2-text">Imagen que encontré en internet y que me llamó la atencion, especialmente por los colores de esta.</p> <!-- parrafo como pequeña descripcion de la tarjeta -->
+                      <div class="d-flex justify-content-between align-items-center"> <!-- contenedor flexbox con alineacion de elementos al centro y con texto justificado -->
+                        <div class="btn-group"> <!-- Definir la clase para el boton para abrir el modal de Bootstrap -->
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m1">Ver</button> <!-- boton que hace aparecer un modal de Bootstrap, configurado para ser pequeño (btn-sm), utilizando las especificiones de modo oscuro de Bootrap (btn-dark), el cambio a modal (data-bs-toggle="modal"), y su objetivo (data-bs-target="#m#") -->
+                              <!--Modal imagen 1 de Bootstrap -->
+                              <div class="modal fade" id="m1" tabindex="-1" aria-labelledby="m1Label" aria-hidden="true"> <!-- clase que define los parametros de difuminación, su id (id="m#"), indicando si puede ser enfocado, y si participa en la navegación secuencial del teclado,  al ser valor negativo significa que se debe poder enfocar el elemento, pero no se debe poder acceder a él mediante navegación secuencial por teclado (tabindex="-1"),  quien lo etiqueta (aria-labelledby="m#Label")-->
+                                <div class="modal-dialog modal-fullscreen"> <!-- Parametros del modal de Bootstrap especificando que la ventana emergente use toda la pantalla (modal-fullscreen) -->
+                                  <div class="modal-content"> <!-- Clase para definir el contenido de la modal -->
+                                    <div class="modal-header"> <!-- Clase para definir el encabezado de la modal -->
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: Artista desconocido</h1> <!-- header para una breve descripcion del contenido de la modal -->
+                                    </div>
+                                    <div class="modal-body"> <!-- Clase para definir el cuerpo de la modal -->
+                                      <image src="img/gdi/gdi1.jpg" alt="imagen modal 2" class="img-fluid"> <!-- Definición de la imagen utilizada en el cuerpo de la ventana emergente o modal con las caracteristicas de adaptable o fluida entregadas por el CSS y JS de Bootrstrap -->
+                                    </div>
+                                    <div class="modal-footer"> <!-- Clase para definir el cuerpo de la ventana emergente o modal -->
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button> <!-- Clase para definir el boton que cierra la modal -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="card-img-top" width="100%" height="225" src="img/gdi/gdi2.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card2-text">Imagen que encontré en internet y que me llamó la atencion, especialmente por el juego de donde precede.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m2">Ver</button>
+                              <!--Modal imagen 2 de Bootstrap -->
+                              <div class="modal fade" id="m2" tabindex="-1" aria-labelledby="m2Label" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: Stray (videojuego, 2022)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <image src="img/gdi/gdi2.jpg" alt="imagen modal 2" class="img-fluid">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdi/gdi3.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">Imagen que encontré en internet y que me llamó la atencion, especialmente por el juego de donde precede.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m3">Ver</button>
+                            <!--Modal imagen 3 de Bootstrap -->
+                            <div class="modal fade" id="m3" tabindex="-1" aria-labelledby="m3Label" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: Sunless Skies (videojuego, 2019)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <image src="img/gdi/gdi3.jpg" alt="imagen modal 3" class="img-fluid">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdi/gdi4.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">Imagen que encontré en internet y que me llamó la atencion, especialmente por anime de donde precede.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m4">Ver</button>
+                            <!--Modal imagen 4 de Bootstrap -->
+                            <div class="modal fade" id="m4" tabindex="-1" aria-labelledby="m4Label" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: La Bruja de Mercurio (anime, 2023)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <image src="img/gdi/gdi4.jpg" alt="imagen modal 4" class="img-fluid">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdi/gdi5.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">Imagen que encontré en internet y que me llamó la atencion, especialmente por la propiedad multimedia de donde precede.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m5">Ver</button>
+                            <!--Modal imagen 5 de Bootstrap -->
+                            <div class="modal fade" id="m5" tabindex="-1" aria-labelledby="m3Label" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: Artista desconocido Warhammer 40K (Propiedad multimedia, 2019)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <image src="img/gdi/gdi5.jpg" alt="imagen modal 5" class="img-fluid">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdi/gdi6.png" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">Fotografia que encontré en internet y que me llamó la atencion, especialmente por los colores de esta.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m6">Ver</button>
+                            <!--Modal imagen 3 de Bootstrap -->
+                            <div class="modal fade" id="m6" tabindex="-1" aria-labelledby="m6Label" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: Fotografo desconocido (Fotografia, fecha desconocida)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <image src="img/gdi/gdi6.png" alt="imagen modal 6" class="img-fluid">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdi/gdi7.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">Imagen que encontré en internet y que me llamó la atencion, especialmente por los colores de esta.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m7">Ver</button>
+                            <!--Modal imagen 3 de Bootstrap -->
+                            <div class="modal fade" id="m7" tabindex="-1" aria-labelledby="m7Label" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: Artista desconocido (ilustración, 2019)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <image src="img/gdi/gdi7.jpg" alt="imagen modal 7" class="img-fluid">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdi/gdi8.png" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">Imagen que encontré en internet y que me llamó la atencion, especialmente por anime de donde precede.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m8">Ver</button>
+                            <!--Modal imagen 9 de Bootstrap -->
+                            <div class="modal fade" id="m8" tabindex="-1" aria-labelledby="m8Label" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: Made in Abyss (Anime, 2017)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <image src="img/gdi/gdi8.png" alt="imagen modal 8" class="img-fluid">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="img.fluid card-img-top" width="100%" height="225" src="img/gdi/gdi9.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card3-text">Imagen que encontré en internet, y me llamó la atencion debido a mi gusto por la tematica Cyberpunk.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m9">Ver</button>
+                            <!--Modal imagen 9 de Bootstrap -->
+                            <div class="modal fade" id="m9" tabindex="-1" aria-labelledby="m9Label" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: Artista desconocido (imagen, fecha desconocida)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <image src="img/gdi/gdi9.jpg" alt="imagen modal 9" class="img-fluid">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="card-img-top" width="100%" height="225" src="img/gdi/gdi10.png" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+                    <div class="card-body">
+                      <p class="card2-text">Imagen que encontré en internet y que me llamó la atencion debido a la nostalgia que evoca.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#m10">Ver</button>
+                              <!--Modal imagen 2 de Bootstrap -->
+                              <div class="modal fade" id="m10" tabindex="-1" aria-labelledby="m10Label" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Fuente: Billy y Mandy de Cartoon Network (Serie animada, 2001)</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                      <image src="img/gdi/gdi10.png" alt="imagen modal 10" class="img-fluid">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 AML</p> <!-- Definición del Footer del sitio -->
+    </footer>
+</body>
+</html>

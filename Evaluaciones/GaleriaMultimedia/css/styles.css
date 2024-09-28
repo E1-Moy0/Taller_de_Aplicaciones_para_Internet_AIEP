@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    color: #a28fbc;
+    margin: 0;
+    padding: 0;
+    padding-bottom:0;
+}
+
+header {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    background-color: #212121;
+    color: #a28fbc;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    background-color: #26202e;
+    color: #a28fbc;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+}
+
+nav ul {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    text-align: center;
+    color: #a28fbc;
+}
+
+/* Estilos para los elementos de la barra de navegacion */
+.navbar-brand {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    text-decoration: none;
+    text-align: center;
+    color: #a28fbc;
+    font-weight: bold;
+    transition: color 0.3s; /* Transición de color */
+}
+
+.navbar-nav {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    color: #a28fbc;
+}
+
+.nav-item {
+    color: #a28fbc;
+}
+
+/* Estilos especificos para las modales */
+.modal-content{
+    background-color: #26202e;
+    color: #a28fbc;
+    border: 1px solid #a28fbc;
+}
+
+.modal-footer{
+    color: #a28fbc;
+    background-color: #26202e;
+}
+
+/* Estilos especificos para las tarjetas de las imagenes */
+.card {
+    background-color: #26202e;
+    border: 1px solid #a28fbc;
+    color: #a28fbc;
+}
+
+.card1-text{
+    text-align: justify;
+}
+
+.card2-text{
+    text-align: justify;
+}
+
+.card3-text {
+    text-align: justify;
+}
