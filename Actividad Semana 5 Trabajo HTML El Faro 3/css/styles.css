@@ -1,0 +1,269 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4e4e4; 
+    color: #a28fbc;
+    margin: 0;
+    padding: 0;
+    padding-bottom:0;
+}
+
+header {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    background-color: #bababa;
+    color: #a28fbc;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+    margin-top: 0;
+}
+
+nav ul {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    text-align: center;
+    color: #a28fbc;
+}
+
+/* Estilos para los elementos de la barra de navegacion */
+.nav-underline {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top: #000000;
+    border-bottom: #000000;
+}
+
+/* Estilos para los elementos de la barra de navegacion superior*/
+.navbar-brand {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Estilos para los links de la barra de categorias y la barra de navegacion superior */
+.nav-link {
+    color: #212121;
+  }
+
+
+.nav-link:hover {
+    color: #0300ce;
+  }
+
+/* Estilos para banner publicitario */
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* define el las caracteristicas como los colores de fondo, la inclinacion de estos, cuanto espacio utiliza cada uno, la sombra debajo, entre otras caracteristicas */
+.banner-container .banner{
+    background:linear-gradient(-55deg, #e2e2e2 29%, #ffffff 29.1%, #ffffff 68%, #154e76 68.1%);
+    color:#000000;
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+
+
+/* define las caracteristicas del contenedor del logo en el banner publicitario */
+.banner-container .banner .logo{
+    flex:1 1 250px;
+    padding:15px;
+    text-align: center;
+}
+
+
+/* define las caracteristicas del contenenedor del contenido del banner publicitario */
+.banner-container .banner .logo img{
+    width:80%;
+}
+
+/* define las caracteristicas del contenenedor del contenido del banner publicitario */
+.banner-container .banner .content{
+    flex:1 1 250px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+
+/* Define las caracteristicas del texto dentro de la etiqueta <span> al interior del banner publicitario */
+.banner-container .banner .content span{
+    color:#0061fe;
+    font-size: 25px;
+}
+
+/* Define las caracteristicas de los titulos de subseccion (etiqueta <h3>) al interior del banner publicitario */
+.banner-container .banner .content h3{
+    color:#0061fe;
+    font-size: 40px;
+}
+
+
+/* Define las caracteristicas de los parrafos (etiqueta <p>) al interior del banner publicitario */
+.banner-container .banner .content p{
+    color:#022b82;
+    font-size: 20px;
+    padding:10px 0;
+}
+
+/* define las caracteristicas del contenenedor de la imagen de la mujer */
+.banner-container .banner .mujerylogo{
+    position: relative;
+    bottom: -33px;
+    padding: 10px;
+    flex:1 1 250px;
+}
+
+/* define el ancho de la imagen de la mujer */
+.banner-container .banner .mujerylogo img{
+    width:100%;
+}
+
+/* Desactiva la imagen de la mujer cuando se alcanzan ciertas dimensiones */
+@media (max-width:768px){
+    .banner-container .banner .mujerylogo{
+        display: none;
+    }
+}
+
+/* Estilos para las noticias destacadas de cada seccion */
+.notimp1 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/cirugia-falso-doctor-puente-alto-750x400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp1 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.notimp1:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+.notimp2 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/consejo-constitucional-contexto-750x400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp2 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+
+.notimp2:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+.notimp3 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/google-ads-manipulacion-engano-subastas-750x400.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp3 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+
+.notimp3:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+.notimp4 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/cierre-de-gobierno-eeuu-desastre-economico-750x400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp4 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+
+.notimp4:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+.notimp5 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/alexis-inter-titular-lautaro-750x400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp5 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+
+.notimp5:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+/* Estilos especificos para las tarjetas con imagenes */
+.card {
+    margin: auto;
+    background-color: #d6d6d6;
+    border: 1px solid #d6d6d6;
+    color: #000000;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.mb-0{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
