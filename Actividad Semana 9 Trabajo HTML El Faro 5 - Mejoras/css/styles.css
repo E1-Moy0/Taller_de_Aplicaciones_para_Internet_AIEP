@@ -1,0 +1,250 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4e4e4; 
+    color: #a28fbc;
+    margin: 0;
+    padding: 0;
+    padding-bottom:0;
+}
+
+header {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    background-color: #bababa;
+    color: #a28fbc;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+nav ul {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    text-align: center;
+    color: #a28fbc;
+}
+
+/* Estilos para los separadores de secciones */
+.separador-seccion {
+  align-items: center;
+  border-bottom: 1px solid rgba(136,153,166,.2);
+  color: #052c65;
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: space-between;
+  line-height: 20px;
+  margin-bottom: 15px;
+  padding: 13px 0;
+  white-space: nowrap;
+}
+
+.separador-seccion::after{
+  background-color: #052c65;
+  content: "";
+  display: block;
+  height: 1px;
+  margin-left: 30px;
+  width: 100%;
+}
+/* Estilos para los elementos de la barra de navegacion */
+.nav-underline {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top: #000000;
+    border-bottom: #000000;
+}
+
+/* Estilos para los elementos de la barra de navegacion superior*/
+.navbar-brand {
+    font-family: 'Roboto', Arial, sans-serif; /* Cambia la tipografia */
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Estilos para los links de la barra de categorias y la barra de navegacion superior */
+.nav-link {
+    color: #212121;
+  }
+
+
+.nav-link:hover {
+    color: #0300ce;
+  }
+
+/* Estilos para banner publicitario */
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para las noticias destacadas de cada seccion */
+.notimp1 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/cirugia-falso-doctor-puente-alto-750x400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp1 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.notimp1:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+.notimp2 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/consejo-constitucional-contexto-750x400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp2 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+
+.notimp2:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+.notimp3 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/google-ads-manipulacion-engano-subastas-750x400.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp3 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+
+.notimp3:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+.notimp4 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/cierre-de-gobierno-eeuu-desastre-economico-750x400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp4 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+
+.notimp4:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+.notimp5 {
+    background: url('https://media.biobiochile.cl/wp-content/uploads/2023/09/alexis-inter-titular-lautaro-750x400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.notimp5 .bg-overlay{
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+
+.notimp5:hover .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 1000ms;
+}
+
+/* Estilos especificos para las tarjetas con imagenes */
+.card {
+    margin: auto;
+    background-color: #d6d6d6;
+    border: 1px solid #d6d6d6;
+    color: #000000;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.mb-0{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* estilos para nueva sección de noticias destacadas */
+.Not-dest { 
+    background-color:#ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #182530 ;
+    box-sizing:border-box;
+    margin:auto;
+
+}
+
+.Not-dest .article {
+    padding-right:30px;
+}
+  
+.Not-dest .titulo-dest {
+    color:#ffffff;
+    width: 100%;
+    background: linear-gradient(180deg,#182530 60%,#f9fbfd);
+}
+
+/* Estilos para el container del texto de la noticia destacada mas grande */
+.Not-dest .article-text-container {
+    background-color:#fff;
+    padding:15px;
+    margin:-15px 8px 0;
+    position:relative;
+    z-index:1;
+    text-decoration: none;
+}
+
+/* Estilos para los links con la etiqueta <a></a> dentro de las noticias destacadas y el footer */
+a {
+    color:#052c65;
+    text-decoration:none;
+    background-color:transparent;
+}
