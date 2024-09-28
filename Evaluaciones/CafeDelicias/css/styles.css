@@ -1,0 +1,100 @@
+/* Estilos para el body */
+body {
+    font-family: Arial, sans-serif; /* cambia la tipografía de la sección */
+    background-color: #4d3619; /* cambia el color de fondo de la sección */
+    margin: 0; /* cambia los margenes de la sección */
+    padding: 0; /* cambia el relleno alrededor del contenido de la sección */
+}
+
+/* Estilos para el header */
+header {
+    text-align: center; /* cambia la alineación del texto de la sección */
+    font-family: 'Roboto', Arial, sans-serif; /* cambia la tipografia de la sección */
+    background-color: #7a6856; /* cambia el color de fondo de la sección */
+    color: #fcebb6; /* cambia el color del texto la sección */
+    padding: 20px; /* cambia el relleno alrededor del contenido de la sección */
+}
+
+/* Estilos para los elementos en forma de lista viñetada no ordenada de la barra de navegación */
+nav ul {
+    font-family: 'Playfair Display', serif; /* cambia la tipografia de la sección */
+    text-align: center; /* cambia la alineación del texto de la sección */
+    color: #fcebb6; /* cambia el color del texto la sección */
+}
+
+/* Estilos los hipervinculos en la barra de navegación */
+nav a {
+    font-family: 'Playfair Display', serif; /* Cambia la tipografia */
+    text-decoration: none; /* cambiala decoración del texto la sección */
+    text-align: center; /* cambia la alineación del texto de la sección */
+    color: #fcebb6; /* cambia el color del texto la sección */
+    font-weight: bold; /* cambia el grueso del texto la sección */
+}
+
+/* Estilos para el main */
+main {
+    max-width: 1200px; /* define el ancho maximo de la sección */
+    margin: 0 auto; /* cambia los margenes de la seccion */
+    padding: 20px; /* cambia el relleno alrededor del contenido de la sección */
+}
+
+/* Estilos para el footer */
+footer {
+    font-family: 'Roboto', Arial, sans-serif; /* cambia la tipografía de la sección */
+    background-color: #7a6856; /* cambia el color de fondo de la sección */
+    color: #fcebb6; /* cambia el color del texto la sección */
+    text-align: center; /* cambia la alineación del texto de la sección */
+    padding: 10px; /* cambia el relleno alrededor del contenido de la sección */
+}
+
+/* Estilos especificos para el menu del café */
+#menu {
+    gap: 20px;
+}
+
+/* Estilos para la clase "producto" */
+.producto {
+    border: 1px solid #c3b186; /* define el grosor y color de los bordes los elementos con la marca "producto" */
+    padding: 10px; /* cambia el relleno alrededor de los elementos con la marca "producto" */
+    background-color: #7a6856; /* cambia el color del fondo de los elementos con la marca "producto" */
+}
+
+/* Estilos para la clase "card" o cartas de contenido de Bootstrap */
+.card {
+    background-color: #c3b186; /* define el color de fondo para la clase "card" o cartas de contenido de Bootstrap */
+    border: 1px solid #4d3619; /* define el grosor y color de los bordes para la clase "card" o cartas de contenido de Bootstrap */
+    color: #4d3619; /* define el color de la tipografia utilizada en la clase "card" o cartas de contenido de Bootstrap */
+}
+
+/* Estilos para la clase "card1-text1" o el texto de la carta 1 de contenido */
+.card1-text1{
+    text-align: justify; /* cambia la alineación del texto de la clase */
+}
+
+/* Estilos para la clase "card2-text1" o el texto de la carta 2 de contenido */
+.card2-text1{
+    text-align: justify; /* cambia la alineación del texto de la clase */
+}
+
+/* Estilos para la clase "card2-text1" o el texto de la carta 3 de contenido */
+.card3-text1 {
+    text-align: justify; /* cambia la alineación del texto de la clase */
+}
+
+/* Estilos para la seccion definida como "carrito" */
+#carrito {
+    background-color: #c3b186; /* cambia el color de fondo de la sección */
+    padding: 20px; /* cambia el relleno alrededor del contenido de la sección */
+    margin-top: 20px; /* define el grosor y color de los bordes de la sección */
+    border: 1px solid #4d3619; /* define el grosor y color de los bordes de la sección */
+    color: #4d3619; /* cambia el color del texto la sección */
+}
+
+/* Estilos para el formulario de datos de cliente */
+#formulario-pedido {
+    background-color: #c3b186; /* cambia el color de fondo de la sección */
+    padding: 20px; /* cambia el relleno alrededor del contenido de la sección */
+    margin-top: 20px; /* define el grosor y color de los bordes de la sección */
+    border: 1px solid #4d3619; /* define el grosor y color de los bordes de la sección */
+    color: #4d3619; /* cambia el color del texto la sección */
+}

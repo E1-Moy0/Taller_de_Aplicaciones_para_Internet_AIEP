@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario datos de envio - CafeDelicias</title>
+    <!-- Importar el CSS de Bootstrap desde su CDN (content delivery network o red de distribución de contenido) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Importar el JavaScript o JS de Bootstrap desde su CDN (content delivery network o red de distribución de contenido) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- CSS Personal-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Tipografias Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Definición de las caracteristicas de la barra de navegación definiendo como se expandira en displays grandes (navbar-expand-lg) y utilizando las indicaciones de estilo oscuro de Bootstrap (navbar-dark) -->
+        <div class="container-fluid"> <!-- Definición del contenedor como fluido o adaptativo para distintos dimensiones de pantalla -->
+          <a class="navbar-brand" href="sitio.html">CafeDelicias</a> <!-- Definición del HTML de referencia utilizado por la pagina de inicio del sitio -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!-- Definición de los parametros de adaptabilidad del boton dropdown de la barra de navegación definiendo si se mostrara en distintos tipos de pantallas (data-bs-toggle="collapse"), su objetivo (data-bs-target="#navbarNav"), los elementos que controla (aria-controls="navbarNav"), si estos se expanden o no (aria-expanded="false") y su etiqueta (aria-label="Toggle navigation") -->
+            <span class="navbar-toggler-icon"></span> <!-- Definición del boton y su icono cuando la barra de navegacion detecta las dimensiones de la pantalla que se esta utilizando -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav"> <!-- Definición de la clase y el id del colapsador de la barra de navegación -->
+            <ul class="navbar-nav"> <!-- Definición de la clase de la lista desortenada que compone la barra de navegación -->
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link" aria-current="page" href="menu.html">Menú</a>
+              </li>
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link" href="#">Nosotros</a> <!-- Definición de elemento con referencia de la barra de navegación -->
+              </li>
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link" href="#">Trabaja con nosotros</a> <!-- Definición de elemento con referencia de la barra de navegación -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header>
+        <div class="container">
+         <img src="img/logo.png" class="img-fluid" alt="logo"> <!-- Definición de la imagen utilizada como logo con las caracteristicas de adaptable o fluida entregadas por el CSS y JS de Bootrstrap -->
+         <h2>Rellene sus datos</h2> <!-- Header para entregar info de lo que debe hacer el cliente en esta parte del sitio-->
+        </div>
+    </header>
+    
+    <main>
+     <div id="formulario-pedido"> <!-- Definición del id de la sección formulario entregada por Bootstrap -->  
+        <div class="text-center"> <!-- Centrar los elementos de esta sección -->  
+            <h4 class="mb-3">Datos cliente</h4> <!-- Encabezado con indicador de multiplicador de margen inferior por 1 especificando en que consiste esta parte del sitio -->
+            <form class="needs-validation" novalidate> <!-- Definición de la validacion requerida de los datos ingresados en caso de querer aplicar estilos entregados por Bootstrap en su sección  -->
+             <div class="row g-3"> <!-- Definición de la clase fila de los elementos del sitio con una indicacion de que todas las gutters o espacios entre filas y columnas sean de tipo 3 o multiplicado por 1 -->
+                 <div class="col-sm-6"> <!-- Definir el ancho de las columnas de la cuadrícula para pantallas pequeñas -->
+                 <label for="nombre" class="form-label">Nombre</label> <!-- Definición etiqueta que representa este elemento y que dice -->
+                 <input type="text" class="form-control" id="nombre" placeholder="Ingrese sus nombres" required> <!-- Definición de caja de texto para ingresar datos con un dato placeholder y que es un dato requerido para continuar -->
+             </div>
+             <div class="col-sm-6"> <!-- Definir el ancho de las columnas de la cuadrícula para pantallas pequeñas -->
+                 <label for="apellido" class="form-label">Apellido</label> <!-- Definición etiqueta que representa este elemento y que dice -->
+                 <input type="text" class="form-control" id="apellido" placeholder="Ingrese ambos apellidos" required> <!-- Definición de caja de texto para ingresar datos con un dato placeholder y que es un dato requerido para continuar -->
+             </div>
+             <div class="col-12"> <!-- Definir el espacio utilizado por el elemento -->
+                 <label for="correo" class="form-label">Email <span class="text-muted">(Opcional)</span></label> <!-- Definición etiqueta que representa este elemento y que dice con la indicacion de que el texto "(opcional)" sea ligeramente apagado -->
+                 <input type="email" class="form-control" id="correo" placeholder="tu@example.com" required> <!-- Definición de caja de texto para ingresar datos con un dato placeholder y que es un dato requerido para continuar -->
+             </div>
+             <div class="col-12"> <!-- Definir el espacio utilizado por el elemento -->
+                 <label for="direccion" class="form-label">Dirección</label> <!-- Definición etiqueta que representa este elemento y que dice -->
+                 <input type="text" class="form-control" id="direccion" placeholder="1234 Avenida horizonte" required> <!-- Definición de caja de texto para ingresar datos con un dato placeholder -->
+             </div>
+             <div class="direccion" class="form-label">Dirección 2 <span class="text-muted">(Opcional)</span></label> <!-- Definición etiqueta que representa este elemento y que dice con la indicacion de que el texto "(opcional)" sea ligeramente apagado -->
+                 <input type="text" class="form-control" id="address2" placeholder="Numero de departamento o casa"> <!-- Definición de caja de texto para ingresar datos con un dato placeholder -->
+             </div>
+             <div class="text-center"> <!-- Centrar los elementos que son parte de esta sección -->
+                 <label for="region" class="form-label">Región</label> <!-- Definición etiqueta que representa este elemento y que dice -->
+                 <select class="form-select" id="region" required> <!-- Definición de que es este elemento y que es requerido para continuar -->
+                 <option value>Indique Región...</option> <!-- Definición opcion por defecto en el menú dropdown de este elemento y que dice -->
+                 <option>Region Metropolitana</option> <!-- Definición opcion en el menú dropdown de este elemento y que dice -->
+                 </select>
+             </div>
+             <div class="text-center">
+                 <label for="comuna" class="form-label">Comuna</label> <!-- Definición etiqueta que representa este elemento y que dice -->
+                 <select class="form-select" id="comuna" required> <!-- Definición de que es este elemento y que es requerido para continuar -->
+                 <option value>Indique comuna...</option> <!-- Definición opcion por defecto en el menú dropdown de este elemento y que dice -->
+                 <option>Vitacura</option> <!-- Definición opcion en el menú dropdown de este elemento y que dice -->
+                 </select>
+             </div>
+             <hr class="my-4"> <!-- Definir que el espacio en el eje Y del elemento sea multiplicado por 1.5 -->
+             <div class="form-check"> <!-- Definición de la clase checkbox del elemento -->
+                 <input type="checkbox" class="form-check-input" id="misma-direccion"> <!-- Definición de checkbox -->
+                 <label class="form-check-label" for="misma-direccion">
+                    La dirección de envío es la misma que mi dirección de facturación <!-- Texto que acompaña al checkbox -->
+                </label> 
+             </div>
+             <div class="form-check"> <!-- Definición de la clase checkbox del elemento -->
+                     <input type="checkbox" class="form-check-input" id="guardar-info"> <!-- Definición de checkbox -->
+                 <label class="form-check-label" for="guardar-info">
+                    Guardar esta información para la próxima vez <!-- Texto que acompaña al checkbox -->
+                </label> 
+             </div>
+             <hr class="my-4"> <!-- Definir que el espacio en el eje Y del elemento sea multiplicado por 1.5 -->
+             <h4 class="mb-3">Forma de Pago</h4> <!-- Header con margen inferior del elemento sea multiplicado por 1.0 -->
+             <div class="my-3"> <!-- Definir que el espacio en el eje Y del elemento sea multiplicado por 1.0 -->
+                 <div class="mb-3 text-center"> <!-- Definir margen inferior del elemento sea multiplicado por 1.0 y que el texto este centrado -->
+                     <select class="form-select" id="formadepago" required> <!-- Definición de que es este elemento y que es requerido para continuar -->
+                     <option value>Indique Forma de pago...</option> <!-- Definición opcion por defecto en el menú dropdown de este elemento y que dice -->
+                     <option>Mercadopago</option> <!-- Definición opcion en el menú dropdown de este elemento y que dice -->
+                     <option>Webpay</option> <!-- Definición opcion en el menú dropdown de este elemento y que dice -->
+                     <option>Tarjeta de crédito</option> <!-- Definición opcion en el menú dropdown de este elemento y que dice -->
+                     <option>Tarjeta de débito</option> <!-- Definición opcion en el menú dropdown de este elemento y que dice -->
+                     </select>
+                 </div>
+            <div class="row gy-3"> <!-- Definicion de fila especificando que el espacio utilizado por las gutters o espacios entre elementos sea multiplicado por 1.0 -->
+                <div class="col-md-6 mb-3"> <!-- Definir el ancho de las columnas de la cuadrícula para pantallas medianas y que el espacio utilizado en el margen inferior de la tarjeta sea multiplicado por 1.0 (mb-3) -->
+                     <label for="cc-nombre" class="form-label">Nombre en la tarjeta</label> <!-- Definición etiqueta que representa este elemento y que dice -->
+                     <input type="text" class="form-control" id="cc-nombre" placeholder required> <!-- Definición de caja de texto para ingresar datos con un dato placeholder no definido y que es necesario para continuar -->
+                     <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+                </div>
+                <div class="col-md-6 mb-3"> <!-- Definir el ancho de las columnas de la cuadrícula para pantallas medianas y que el espacio utilizado en el margen inferior de la tarjeta sea multiplicado por 1.0 (mb-3) -->
+                      <label for="cc-numero" class="form-label">Número de tarjeta</label> <!-- Definición etiqueta que representa este elemento y que dice -->
+                     <input type="text" class="form-control" id="cc-numero" placeholder required> <!-- Definición de caja de texto para ingresar datos con un dato placeholder no definido y que es necesario para continuar -->
+                </div>
+            </div>
+            <div class="row gy-3"> <!-- Definicion de fila especificando que el espacio utilizado por las gutters o espacios entre elementos sea multiplicado por 1.0 -->
+                 <div class="col-md-6"> <!-- Definir el ancho de las columnas de la cuadrícula para pantallas medianas -->
+                     <label for="cc-vencimiento" class="form-label">Fecha de vencimiento</label> <!-- Definición etiqueta que representa este elemento y que dice -->
+                     <input type="text" class="form-control" id="cc-vencimiento" placeholder required> <!-- Definición de caja de texto para ingresar datos con un dato placeholder no definido y que es necesario para continuar -->
+                 </div>
+                 <div class="col-md-6"> <!-- Definir el ancho de las columnas de la cuadrícula para pantallas medianas -->
+                     <label for="cc-cvv" class="form-label">CVV</label> <!-- Definición etiqueta que representa este elemento y que dice -->
+                     <input type="text" class="form-control" id="cc-cvv" placeholder required> <!-- Definición de caja de texto para ingresar datos con un dato placeholder no definido y que es necesario para continuar -->
+                     <small class="text-muted">Serie de 3 números al reverso de su tarjeta</small> <!-- Definición etiqueta que representa este elemento y que dice, con la indicacion de que el texto abajo de la caja esté ligeramente apagado -->
+                 </div>
+            </div>
+            </div>
+             <hr class="my-4"> <!-- Definicion de clase especificando que el utilizado por los margenes en el eje Y sea multiplicado por 1.5 -->
+             <button class="w-100 btn btn-dark btn-lg" type="submit">Continuar a sitio de pago</button> <!-- Definición de boton para ir a la pagina del metodo de pago elegido -->
+            </form>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 CafeDelicias</p> <!-- Definición del Footer del sitio del formulario -->
+    </footer>
+</body>
+</html>

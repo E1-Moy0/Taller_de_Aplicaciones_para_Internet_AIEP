@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - CafeDelicias</title>
+    <!-- Importar el CSS de Bootstrap desde su CDN (content delivery network o red de distribución de contenido) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Importar el JavaScript o JS de Bootstrap desde su CDN (content delivery network o red de distribución de contenido) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- CSS Personal-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Tipografias Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Definición de las caracteristicas de la barra de navegación definiendo como se expandira en displays grandes (navbar-expand-lg) y utilizando las indicaciones de estilo oscuro de Bootstrap (navbar-dark) -->
+        <div class="container-fluid"> <!-- Definición del contenedor como fluido o adaptativo para distintos dimensiones de pantalla -->
+          <a class="navbar-brand" href="sitio.html">CafeDelicias</a> <!-- Definición del HTML de referencia utilizado por la pagina de inicio del sitio -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!-- Definición de los parametros de adaptabilidad del boton dropdown de la barra de navegación definiendo si se mostrara en distintos tipos de pantallas (data-bs-toggle="collapse"), su objetivo (data-bs-target="#navbarNav"), los elementos que controla (aria-controls="navbarNav"), si estos se expanden o no (aria-expanded="false") y su etiqueta (aria-label="Toggle navigation") -->
+            <span class="navbar-toggler-icon"></span> <!-- Definición del boton y su icono cuando la barra de navegacion detecta las dimensiones de la pantalla que se esta utilizando -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav"> <!-- Definición de la clase y el id del colapsador de la barra de navegación -->
+            <ul class="navbar-nav"> <!-- Definición de la clase de la lista desortenada que compone la barra de navegación -->
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link active" aria-current="page" href="menu.html">Menú</a> <!-- Definición de elemento activo con referencia al menú de la barra de navegación -->
+              </li>
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link" href="#">Nosotros</a><!-- Definición de elemento con referencia de la barra de navegación -->
+              </li>
+              <li class="nav-item"> <!-- Definición del item de la lista que compone la barra de navegación -->
+                <a class="nav-link" href="#">Trabaja con nosotros</a> <!-- Definición de elemento con referencia de la barra de navegación -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header>
+        <img src="img/Menu.png" class="img-fluid" alt="Menu"> <!-- Definición de la imagen utilizada como logo con las caracteristicas de adaptable o fluida entregadas por el CSS y JS de Bootrstrap -->
+    </header>
+    
+    <main>
+        <!-- Lista de productos y precios -->
+         <div id="menu"> <!-- Definición del id del elemento "menu" del sitio -->
+             <div class="producto"> <!-- Definición de la clase de los elementos "producto" del sitio -->
+                 <div class="row"> <!-- Definición de la clase fila de los elementos del sitio -->
+                  <!-- Boostrap separa el sitio en 12 columnas para una manipulación del espacio y adaptacion a la pantalla del dispositivo mas efectivas -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3"> <!-- Definición de como se adaptará este elemento a los cambios de las dimensiones de la pantalla del dispositivo, si este es pequño utilizará las 12 columnas disponibles (col-sm-12), si es mediano 6 columnas (col-md-6), si es grande 3 colunas (col-lg-4) y si es extra grande 4 columnas (col-xl-4) y que el espacio utilizado en el margen inferior de la tarjeta sea multiplicado por 1.0 (mb-3) -->
+                            <div id="cardproducto"> <!-- Definición del id de tarjeta o "card" entregada por Bootstrap del producto 1 -->
+                                <div class="card"> <!-- Definición de la clase de tarjeta o "card" entregada por Bootstrap del producto 1 -->
+                                   <img src="img/cortado.jpg" class="card-img-top img-fluid" alt="Imagen producto 1"> <!-- Definición de la imagen superior de la card o tarjeta como adaptable o fluida entregada por Bootstrap del producto 1 -->
+                                   <div class="card-body"> <!-- Definición del cuerpo de la tarjeta o "card" entregada por Bootstrap del producto 1 -->
+                                     <h5 class="card-title">Café Cortado</h5> <!-- Definición de la cabecera (para el nombre del prodcuto) de la tarjeta o "card" entregada por Bootstrap del producto 1 -->
+                                     <p class="card1-text1">“Cortando” la intensidad del espresso</p> <!-- Definición de un parrafo para la descripción del prodcuto de la tarjeta o "card" entregada por Bootstrap del producto 1 -->
+                                     <div class="text-center mb-3"> <!-- Hacer que el texto este centrado y con un margen inferior de 3 pixeles de la tarjeta o "card" entregada por Bootstrap del producto 1 -->
+                                         <p class="card-text">Precio: $1.500</p> <!-- Definición de un parrafo para el precio del prodcuto de la tarjeta o "card" entregada por Bootstrap del producto 1 -->
+                                     </div>
+                                     <div class="text-center"> <!-- Hacer que el elemento este centrado en la tarjeta o "card" entregada por Bootstrap del producto 1 -->
+                                         <a href="#" class="btn btn-dark">Agregar al carrito</a> <!-- boton en modo oscuro en la tarjeta o "card" entregada para agregar al carrito (no funciona) por Bootstrap del producto 1 -->
+                                     </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3"> <!-- Definición de como se adaptará este elemento a los cambios de las dimensiones de la pantalla del dispositivo, si este es pequño utilizará las 12 columnas disponibles (col-sm-12), si es mediano 6 columnas (col-md-6), si es grande 3 colunas (col-lg-4) y si es extra grande 4 columnas (col-xl-4) y que el espacio utilizado en el margen inferior de la tarjeta sea multiplicado por 1.0 (mb-3) -->
+                        <div id="cardproducto"> <!-- Definición del id de tarjeta o "card" entregada por Bootstrap del producto 2 -->
+                            <div class="card"> <!-- Definición de la clase de tarjeta o "card" entregada por Bootstrap del producto 2 -->
+                               <img src="img/espresso.jpg" class="card-img-top img-fluid" alt="Imagen producto 2"> <!-- Definición de la imagen superior de la card o tarjeta como adaptable o fluida entregada por Bootstrap del producto 2 -->
+                               <div class="card-body"> <!-- Definición del cuerpo de la tarjeta o "card" entregada por Bootstrap del producto 2 -->
+                                 <h5 class="card-title">Cafe Espresso</h5> <!-- Definición de la cabecera (para el nombre del prodcuto) de la tarjeta o "card" entregada por Bootstrap del producto 2 -->
+                                 <p class="card2-text1">Complejidad en pocos sorbos</p> <!-- Definición de un parrafo para la descripción del prodcuto de la tarjeta o "card" entregada por Bootstrap del producto 2 -->
+                                 <div class="text-center mb-3"> <!-- Hacer que el texto este centrado y y que el espacio utilizado en el margen inferior de la tarjeta o "card" de Bootstrap del producto 2 sea multiplicado por 1.0 (mb-3) -->
+                                  <p class="card-text">Precio: $1.600</p> <!-- Definición de un parrafo para el precio del prodcuto de la tarjeta o "card" entregada por Bootstrap del producto 2 -->
+                                 </div>
+                                 <div class="text-center"> <!-- Hacer que el elemento este centrado en la tarjeta o "card" entregada por Bootstrap del producto 2 -->
+                                   <a href="#" class="btn btn-dark">Agregar al carrito</a> <!-- boton en modo oscuro en la tarjeta o "card" entregada para agregar al carrito (no funciona) por Bootstrap del producto 2 -->
+                                 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3"> <!-- Definición de como se adaptará este elemento a los cambios de las dimensiones de la pantalla del dispositivo, si este es pequño utilizará las 12 columnas disponibles (col-sm-12), si es mediano 6 columnas (col-md-6), si es grande 3 colunas (col-lg-4) y si es extra grande 4 columnas (col-xl-4) y que el espacio utilizado en el margen inferior de la tarjeta sea multiplicado por 1.0 (mb-3) -->
+                        <div id="cardproducto"> <!-- Definición del id de tarjeta o "card" entregada por Bootstrap del producto 3 -->
+                            <div class="card"> <!-- Definición de la clase de tarjeta o "card" entregada por Bootstrap del producto 3 -->
+                               <img src="img/espresso-doble.jpg" class="card-img-top img-fluid" alt="Imagen producto 3"> <!-- Definición de la imagen superior de la card o tarjeta como adaptable o fluida entregada por Bootstrap del producto 3 -->
+                               <div class="card-body"> <!-- Definición del cuerpo de la tarjeta o "card" entregada por Bootstrap del producto 3 -->
+                                 <h5 class="card-title">Cafe Espresso Doble</h5> <!-- Definición de la cabecera (para el nombre del prodcuto) de la tarjeta o "card" entregada por Bootstrap del producto 3 -->
+                                 <p class="card3-text1">Complejidad en pocos sorbos</p> <!-- Definición de un parrafo para la descripción del prodcuto de la tarjeta o "card" entregada por Bootstrap del producto 3 -->
+                                 <div class="text-center mb-3"> <!-- Hacer que el texto este centrado y y que el espacio utilizado en el margen inferior de la tarjeta o "card" de Bootstrap del producto 2 sea multiplicado por 1.0 (mb-3) -->
+                                     <p class="card-text">Precio: $2.000</p> <!-- Definición de un parrafo para el precio del prodcuto de la tarjeta o "card" entregada por Bootstrap del producto 3 -->
+                                 </div>
+                                <div class="text-center"> <!-- Hacer que el elemento este centrado en la tarjeta o "card" entregada por Bootstrap del producto 3 -->
+                                     <a href="#" class="btn btn-dark">Agregar al carrito</a> <!-- boton en modo oscuro en la tarjeta o "card" entregada para agregar al carrito (no funciona) por Bootstrap del producto 3 -->
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+        <div id="carrito">
+            <h2>Carrito de Compras</h2> <!-- Lista de elementos en el carrito y total -->
+            <form id="formulario-pedido"> <!-- Definición del boton a formularios de datos de cliente -->
+                <a href="formulario.html" class="btn btn-dark">Finalizar pedido</a> <!-- Boton en modo oscuro (gracias a Bootstrap) a formulario de datos de cliente -->
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 CafeDelicias</p> <!-- Definición del Footer del sitio del menú -->
+    </footer>
+</body>
+</html>
